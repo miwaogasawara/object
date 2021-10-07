@@ -1,7 +1,7 @@
 package basic.human1;
 
 //データとしてのクラス宣言
-class Human {
+public class Human {
     //フィールドの宣言
     private String name;
     private int age;
