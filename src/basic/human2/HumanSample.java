@@ -16,3 +16,8 @@ public class HumanSample {
         //Human2クラスはカプセル化できていない
     }
 }
+/*
+
+
+
+ */
