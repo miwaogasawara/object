@@ -5,7 +5,7 @@ public class Human {
     String name;
     int age;
 
-    //コンストラクタ
+    //コンストラクタ　オーバーロード　（同じ戻り値とメソッド名でシグネチャが異なるメソッドを定義）
     public Human(String name, int age) {
         this.name = name;
         this.age = age;
