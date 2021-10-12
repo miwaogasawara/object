@@ -9,8 +9,10 @@ class FigureSample {
             new Triangle(5, 10),
             new Circle(5)
         };
+//出力
         for (Figure figure : figures) {
             System.out.println(figure);
+//System.out.pｒint(
 
         }
     }

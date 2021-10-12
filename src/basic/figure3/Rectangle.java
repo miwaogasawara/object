@@ -1,6 +1,6 @@
-package basic.figure1;
+package basic.figure3;
 
- class Rectangle {
+ class Rectangle implements  IfGetArea{
     //フィールド
      private  double height;//幅
      private  double widht;//高さ

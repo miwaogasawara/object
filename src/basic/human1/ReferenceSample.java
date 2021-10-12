@@ -4,7 +4,7 @@ public class ReferenceSample {
     public static void main(String[] args) {
         Human human1 = new Human("Tom",28);//器の場所が保存されました。
         Human human2 = human1;//出力すると必ずhuman1と同じになります。
-        Human human3 = new Human((human1));//複製で器を作りました
+        Human human3 = new Human((human1));//複製で器を作り,独立したものとなりました
 
         System.out.println(human1);
         System.out.println(human2);
