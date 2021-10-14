@@ -1,6 +1,6 @@
 package basic.student;
 
-class Student {
+public class Student {
     private String name;
     private  String gender;
     private int age;
@@ -9,6 +9,10 @@ class Student {
         this.name = name;
         this.gender = jender;
         this.age = age;
+    }
+
+    public Student(String いのうえ, String 女, int age, int i, int i1) {
+
     }
 
     public String getName() {
