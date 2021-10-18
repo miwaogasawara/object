@@ -1,6 +1,6 @@
 package basic.figure3;
 
-public class Circle implements  IfGetArea{
+public class Circle  implements IfGetArea{
     private double radius;//半径
 
     public Circle(double radius) {

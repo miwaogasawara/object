@@ -91,4 +91,9 @@ list.retainAll(Arrays.asList(80,10,40、50));//一致しなければ削除
     []
     true
 
+ /*
+
+ その他のメソッドはリファレンスを参照してください。
+https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/ArrayList.html
  */
+

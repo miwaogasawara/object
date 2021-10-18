@@ -1,6 +1,7 @@
 package basic.ex.figure2;
-
+//三角形クラス
 class Triangle extends Figure {
+    //フィールド
     private double height;
     private double base;
 
@@ -16,6 +17,10 @@ class Triangle extends Figure {
     public double getBase() {
         return base;
     }
+    /**
+     * 面積を求める getArea()
+     * @return double 図形の面積
+     */
     public  double getArea() {
         return (height * base) / 2;
     }

@@ -1,6 +1,6 @@
 package basic.figure3;
 
-class Triangle implements  IfGetArea{
+class Triangle implements IfGetArea{
     private double height;
     private double base;
 

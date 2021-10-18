@@ -1,5 +1,5 @@
 package basic.ex.figure2;
-
+//長方形クラス
 class Rectangle extends Figure {
    //フィールド
     private  double height;

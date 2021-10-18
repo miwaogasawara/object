@@ -1,25 +1,27 @@
 package basic.figure2;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 //図形の面積
 class FigureSample {
     public static void main(String[] args) {
-        // インスタンスの作成
-        basic.ex.figure2.Figure[] figures = {
+        //インスタンスの作成
+        //ArrayListで宣言
+        List<Figure> figures = new ArrayList<>();
+        figures.addAll(Arrays.asList(
+                new Rectangle(10,20),
+                new Triangle(20,15),
+                new Circle(10)
+        ));
 
-                new basic.ex.figure2.Rectangle(10, 20),
-                new basic.ex.figure2.Triangle(5, 10),
-                new basic.ex.figure2.Circle(5)
-        };
-//出力
-        for (basic.ex.figure2.Figure figure : figures) {
+        //出力
+        for (Figure figure:figures) {
             System.out.println(figure);
-//System.out.pｒint(
-
         }
     }
-
-
 }
+
 /*
 長方形 高さ:10.00 幅:20.00 面積:200.00
 三角形　底辺15.00×高さ20.00÷2　面積:150.00
