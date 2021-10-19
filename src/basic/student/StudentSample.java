@@ -12,3 +12,8 @@ package basic.student;
         System.out.println(student2.getJender());//男
     }
 }
+/*
+小川
+40
+男
+ */

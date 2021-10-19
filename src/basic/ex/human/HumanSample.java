@@ -27,7 +27,9 @@ public class HumanSample {
 
 
 /*
-
-
+結果
+Hello.I'm Tom.
+こんにちは、私の名前はひろしです。
+我的名字是王。
 
  */
