@@ -20,7 +20,7 @@ class HashMapSample {
         System.out.println(map.keySet());//[orange, apple, pineapple]順番が不同です
         //値の集合の取得
         System.out.println(map.values());//[オレンジ, りんご, パイナップル]順番が不同です
-        //キーと値の取得
+        //キーと値の取得.entrySet
         for (Map.Entry entry:map.entrySet()) {
             System.out.println(entry.getKey() + ":"  + entry.getValue());
         }
