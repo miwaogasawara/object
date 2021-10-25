@@ -19,15 +19,15 @@ class Employee2 {
                 '}';
     }
 
-    @Override
+    @Override//サブクラスを許容する
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null || getClass() != o.getClass()) return false;//　←が違うクラスが同値であるかどうか
         Employee2 employee = (Employee2) o;
         return id == employee.id && Objects.equals(name, employee.name);
     }
 
-    @Override
+    @Override//P87参照　オブジェクトの保存場所はハッシュ値で決まる
     public int hashCode() {
         return Objects.hash(id, name);
     }
