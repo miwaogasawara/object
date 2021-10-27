@@ -3,10 +3,10 @@ package basic.ex.person2;
 import basic.sample.enumsample.Gender;
 
 class Person {
-     private String name;
-     private Birthplace birthplace;
-     private Gender gender;
-     private int age;
+    private String name;
+    private Birthplace birthplace;
+    private Gender gender;
+    private int age;
 
     public Person(String name, Birthplace birthplace, Gender gender, int age) {
         this.name = name;
@@ -19,7 +19,7 @@ class Person {
         return name;
     }
 
-    public String getBirthplace() {
+    public Birthplace getBirthplace() {
         return birthplace;
     }
 
@@ -30,20 +30,10 @@ class Person {
     public int getAge() {
         return age;
     }
-    //sum
-    public int sum() {
-        return age;
-    }
-
-    //ave
-    public double ave() {
-        return sum()/3.0;
-    }
 
     @Override
     public String toString() {
-        return String.format("%s %s %s %d"
-                , name,birthplace.getJpBirthPlace(), gender.getJpName(),age);
+        return String.format("%s %s %s %d",
+                name, birthplace.getName(), gender.getJpName(), age);
     }
 }
-
