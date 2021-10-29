@@ -8,11 +8,11 @@ import java.util.List;
 public class ArrayListSample {
     public static void main(String[] args) {
         //宣言と初期化①
-        List<Integer> list = new ArrayList<>();//LIST<整数intという意味＞
+        List<Integer> list = new ArrayList<>();//List<整数intという意味＞．．．整数のリストを作成
         //List<Integer> list = new ArrayList<>(Arrays.asList(20,10,40,30,50));//①+②
 
         //初期化②
-        list.addAll(Arrays.asList(20,10,40,30,50));//Array(1000)と多めに設定もできる
+        list.addAll(Arrays.asList(20,10,40,30,50));//Listの要素をaddAllを使って一度に設定する
 
         //表示
         System.out.println(list);//[20, 10, 40, 30, 50]
