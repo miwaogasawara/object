@@ -9,7 +9,7 @@ public class TypeConversion {
 
         //文字→数値 に変更する
         String number ="12.34";
-        double d2 = Double.parseDouble(number);
+        double d2 = Double.parseDouble(number);//
         Double d3 = Double.valueOf(number);
         System.out.println(d2);//12.34
         System.out.println(d3);//12.34
