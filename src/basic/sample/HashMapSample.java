@@ -14,23 +14,23 @@ class HashMapSample {
 
         //表示
         System.out.println(map);//{orange=オレンジ, apple=りんご, pineapple=パイナップル}順番が不同です
-        //要素の取得
+        //要素の取得:get("apple")
         System.out.println( map.get("apple"));//りんご
-        //キーの集合の取得
+        //キーの集合の取得:keySet()
         System.out.println(map.keySet());//[orange, apple, pineapple]順番が不同です
-        //値の集合の取得
+        //値の集合の取得:values()
         System.out.println(map.values());//[オレンジ, りんご, パイナップル]順番が不同です
         //キーと値の取得.entrySet
         for (Map.Entry entry:map.entrySet()) {
             System.out.println(entry.getKey() + ":"  + entry.getValue());
         }
-        //要素の削除
+        //要素の削除:remove
         System.out.println(map.remove("orange"));
-        //要素の変更
+        //要素の変更:put("apple", "リンゴ")
         System.out.println(map.put("apple", "リンゴ"));
         //表示
         System.out.println(map);
-        //キーによる検索
+        //キーによる検索:containsKey(searchWord)
         String searchWord = "orange";
         if (map.containsKey(searchWord)) {
             System.out.println(map.get(searchWord));
