@@ -48,9 +48,6 @@ public class TimeCreateSample {
         System.out.println("元の値:"+ dateTime1);//元の値:2017-01-02T03:45:06.890
 
 
-
-
-
     }
 
 }

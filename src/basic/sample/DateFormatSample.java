@@ -13,7 +13,14 @@ public class DateFormatSample {
         DateFormat format = new SimpleDateFormat("yyyy年MM月dd日HH時mm分ss秒");
         System.out.println(format.format(date));//2021年11月04日13時44分01秒
 
-        //文字列で表現された日付をDateクラスに変換する
+        //文字列で表現された日付をDateクラスに変換する：parseメソッド
+        try {
+            Date date1 = format.parse("2017年01月01日01時23分30秒");
+            System.out.println(date1);//Sun Jan 01 01:23:30 JST 2017...Dateの形式に変換されました
+        }catch (ParseException exception){
+            System.out.println("パースエラー");
+
+        }
 
     }
 }
