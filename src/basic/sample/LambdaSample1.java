@@ -47,4 +47,14 @@ public class LambdaSample1 {
         //[LambdaSample{name='Shin', score=60}, LambdaSample{name='Takuya', score=80}, LambdaSample{name='Ken', score=100}]
 
     }
+    /*
+    省略部分	条件(ラムダ式）
+
+    引数の型	全引数の型を省略すること
+    引数の()	1単語の時のみ
+    メソッドの{}	1ステートメントの時のみ
+    戻り値がある場合、returnの省略とセット
+    return	メソッドの{}の省略とセット
+
+     */
 
