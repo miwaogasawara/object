@@ -78,17 +78,6 @@ import java.util.List;
                  } catch (HogeException e) {
                  e.printStackTrace();
                  }
-                    例外	概要
-                    NullPointerException	        オブジェクトがnullである
-                    IndexOutOfBoundsException	    インデックスが範囲外
-                    UnsupportedOperationException	要求された操作が未サポート
-                    IllegalArgumentException	    メソッドに渡されたパラメーターが不正である
-                    ArithmeticException	            計算で例外的な条件が発生
-
-
-
-
-
      */
 
 
