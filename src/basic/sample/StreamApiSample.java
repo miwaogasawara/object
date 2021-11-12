@@ -1,7 +1,9 @@
 package basic.sample;
-//stream API
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
+//stream API: List stream
 
 public class StreamApiSample {
     //フィールドの作成
@@ -42,6 +44,7 @@ public class StreamApiSample {
                 .filter(streamApiSample -> streamApiSample.getScore()>= 70)//中間操作：scoreが７０点以上人を抽出
                 //void forEach(Consumer<T>):Consumerを引数に取り、要素の数だけ処理を繰り返します
                 .forEach(streamApiSample -> System.out.println(streamApiSample.getName()));//終端操作：該当者の名前を表示
+
     }
 }
 
