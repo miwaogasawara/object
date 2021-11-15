@@ -29,3 +29,7 @@ public class LambdaSample2 {
     }
 
 }
+
+/*
+ラムダ式で記載する場合、1文であればreturnは省略可なので、グレーアウトしています
+ */

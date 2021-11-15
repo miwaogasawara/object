@@ -1,6 +1,6 @@
 package basic.student;
 
-public class Student {
+ class Student {
     private String name;
     private  String gender;
     private int age;
@@ -12,6 +12,10 @@ public class Student {
     }
 
     public Student(String いのうえ, String 女, int age, int i, int i1) {
+
+    }
+
+    public Student() {
 
     }
 
