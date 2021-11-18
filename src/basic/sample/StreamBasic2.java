@@ -1,6 +1,6 @@
 package basic.sample;
 
-import basic.student.Student;
+//import basic.student.Student;
 
 import java.util.List;
 import java.util.stream.IntStream;
@@ -39,10 +39,6 @@ public class StreamBasic2 {
                 //s1、s2の文字列長の差を求め、文字列長の大小を表しています。
                 //文字列長が長い順に並べ替えます。
                 .forEach(System.out::println);//さくらぎちょう  あかさか  よよぎ
-
-
-
-
     }
 }
 /*

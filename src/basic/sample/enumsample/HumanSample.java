@@ -1,6 +1,6 @@
 package basic.sample.enumsample;
 
-import basic.student.Student;
+
 
 public class HumanSample {
     public static void main(String[] args) {
