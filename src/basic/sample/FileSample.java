@@ -16,20 +16,20 @@ public class FileSample {
         File file = new File("/Users/user.DESKTOP-B1EO9TJ/Desktop");
 
         // ファイルの存在確認
-        if(file.exists()){
+        if(file.exists()){//existsメソッド：存在を見る
             System.out.println("ファイルが存在します。");
         }else{
             System.out.println("ファイルが存在しません。");
         } //ファイルが存在します。
 
-        //事例2：ファイル書き込み操作
+        //事例2：ファイル書き込み操作：FileWriterクラス
         FileWriter filewriter = null;
         try {
             filewriter = new FileWriter("/Users/user.DESKTOP-B1EO9TJ/Desktop/javasample.txt");
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace();//printStackTrace:実行したメソッドの時系列の一覧
         }
-        PrintWriter pw = new PrintWriter(new BufferedWriter(filewriter));
+        PrintWriter pw = new PrintWriter(new BufferedWriter(filewriter));//※参照
         //ファイルに書き込む
         pw.println("apple");
         pw.println("orange");
@@ -62,7 +62,7 @@ public class FileSample {
         @SuppressWarnings("resource")
         FileChannel inCh = null;
         try {
-            inCh = new FileInputStream(fileIn).getChannel();
+            inCh = new FileInputStream(fileIn).getChannel();//※2参照
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -82,28 +82,28 @@ public class FileSample {
         }//apple  orange melon  :サンプルメモテキスト1の内容がサンプルメモテキスト2へコピーされました。
 
         //事例5：ファイルの削除:参照先：https://www.javadrive.jp/start/file/index6.html
-        Path p = Paths.get("/Users/user.DESKTOP-B1EO9TJ/Desktop/javasample3.txt");
+       // Path p = Paths.get("/Users/user.DESKTOP-B1EO9TJ/Desktop/javasample3.txt");..削除できないようにコメントアウトしてます
 
-        try{
-            Files.delete(p);
-        }catch(IOException e){
-            System.out.println(e);
-        }//サンプル作成した"/Users/user.DESKTOP-B1EO9TJ/Desktop/javasample3.txt"が削除されました
+       // try{
+           // Files.delete(p);
+       // }catch(IOException e){
+           // System.out.println(e);
+        //}//サンプル作成した"/Users/user.DESKTOP-B1EO9TJ/Desktop/javasample3.txt"が削除されました
 
-        //事例6：ファイルを作成する...教科書242
-        Path path = Paths.get("/Users/user.DESKTOP-B1EO9TJ/Desktop/javasample3.txt");
-        try {
-            Files.createFile(path);
+        //事例6：ファイルを作成する...教科書242..再度作成できないのでコメントアウトしています
+        //Path path = Paths.get("/Users/user.DESKTOP-B1EO9TJ/Desktop/javasample3.txt");
+        //try {
+          //  Files.createFile(path);
 
-        }catch (FileAlreadyExistsException ex){
-            System.out.println(ex);
-        }catch (IOException ex){
-            System.out.println(ex);
+     //   }catch (FileAlreadyExistsException ex){　　//※3
+        //    System.out.println(ex);
+      //  }catch (IOException ex){
+        //    System.out.println(ex);
         }//"java.nio.file.NoSuchFileException: \Users\user.DESKTOP-B1EO9TJ\Desktop\javasample3.txt"できた！！
 
     }
 
-    }
+
 
 
 /*
@@ -112,5 +112,19 @@ C:/Users/user.DESKTOP-B1EO9TJ/Desktop（サンプルデスクトップファイ�
 C:/Users/user.DESKTOP-B1EO9TJ/Desktop/javasample.txt（サンプルメモテキスト1）コピー元
 C:/Users/user.DESKTOP-B1EO9TJ/Desktop/javasample2.txt（サンプルメモテキスト2）コピー先
 C:/Users/user.DESKTOP-B1EO9TJ/Desktop/javasample3.txt（サンプルメモテキスト3）..削除と作成
+
+「バイナリファイル」って単語が出てきたら「メモ帳で編集できないファイル」ってこと
+※1
+バッファリング処理とは、書き込み時であればデータを一旦メモリー（バッファ）に蓄積し、いっぱいになったところで
+ファイルに出力することを言います。読み込み時であればバッファにまとめてデータを読み込み、いっぱいになったところで
+データを処理します。いずれの場合もデータをまとめて処理できるので、読み書きを効率化できます。
+
+※2
+FileInputStreamクラスはファイルを読み込み、ファイルの内容を元にした処理や、新しいファイルの作成などを行うために
+使います。FileInputStreamクラスを使うと、ファイルはバイトストリームで読み込まれます。文字ストリームで読み込み
+たい場合はFileReaderクラスを使用してください。
+
+※3　　FileAlreadyExistsException
+ファイルまたはディレクトリの作成を試みたときにその名前のファイルがすでに存在している場合にスローされるチェック例外です。
 
  */
