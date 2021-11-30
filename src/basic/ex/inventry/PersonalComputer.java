@@ -1,19 +1,19 @@
 package basic.ex.inventry;
 //PC情報
 public class PersonalComputer {
-    String userName;
-    int pcNo;
-    int storageNo;
-    int memory;
-    String bit;
-    String OS;
+    String userName;//使用者名
+    int pcNo;//㍶番号
+    int storageNo;//倉庫番号
+    int price;//金額
+    String bit;//Bit数
+    String OS;//OS
 
-    public PersonalComputer(String userName, int pcNo, int storageNo, int memory, String bit, String OS) {
+    public PersonalComputer(String userName, int pcNo, int storageNo, int price, int bit, String OS) {
         this.userName = userName;
         this.pcNo = pcNo;
         this.storageNo = storageNo;
-        this.memory = memory;
-        this.bit = bit;
+        this.price = price;
+        this.bit = String.valueOf(bit);
         this.OS = OS;
     }
 
@@ -29,8 +29,8 @@ public class PersonalComputer {
         return storageNo;
     }
 
-    public int getMemory() {
-        return memory;
+    public int getPrice() {
+        return price;
     }
 
     public String getBit() {
@@ -42,3 +42,6 @@ public class PersonalComputer {
     }
 
 }
+/*
+
+ */

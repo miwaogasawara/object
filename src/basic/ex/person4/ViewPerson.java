@@ -1,8 +1,5 @@
 package basic.ex.person4;
-
 import basic.sample.enumsample.Gender;
-
-import java.lang.reflect.Array;
 import java.util.*;
 
 class ViewPerson {
@@ -22,10 +19,10 @@ class ViewPerson {
 
    //Mapを性別に分類
    for (Person person:personList){
-    if (genderListMap.containsKey(person.getGender())) {
-     genderListMap.get(person.getGender()).add(person);
+    if (genderListMap.containsKey(person.getGender())) { //MAPにperson.getGender()が存在しているかみる
+     genderListMap.get(person.getGender()).add(person);//存在していたら、personに追加する
     }else {
-     List<Person>list = new ArrayList<>();
+     List<Person>list = new ArrayList<>();//listになければ新しいリストを作成し追加する
      list.add(person);
      genderListMap.put(person.getGender(),list);
     }

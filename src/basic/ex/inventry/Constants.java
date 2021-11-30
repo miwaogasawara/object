@@ -12,3 +12,9 @@ public interface Constants {
     int BIT_32 =32;
 
 }
+
+/*
+ public static final String WINDOWS_10 = "Windows10";
+    public static final String WINDOWS_11= "Windows11";
+    public static final String MAC = "Mac";
+ */
