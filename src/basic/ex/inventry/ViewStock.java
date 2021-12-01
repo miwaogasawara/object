@@ -27,10 +27,10 @@ public class ViewStock {
         for (PersonalComputer p:pcList){
             int storageNo = p.getStorageNo();//倉庫番号を定義する
             //倉庫ナンバーが重複しないようにcontainsKey（指定したキーが Dictionary<TKey,TValue> に格納されているかどうかを判断）で抽出
-            if (!storagePriceMap.containsKey(storageNo)){
-                storagePriceMap.put(storageNo,new ArrayList<>());//倉庫ナンバーに紐づけて金額を表示、
+            if (!storagePriceMap.containsKey(storageNo)){//Mapの中に倉庫番号がKyeとしてはいっているいなければ①、倉庫番号があれば②へ
+                storagePriceMap.put(storageNo,new ArrayList<>());//①新し倉庫番号を作る、
             }
-            storagePriceMap.get(p.storageNo).add(p.getPrice());
+            storagePriceMap.get(p.storageNo).add(p.getPrice());//②庫番号に金額を登録する、
         }
         //表示
         System.out.println("// storagePriceMapの中身のチェック");
