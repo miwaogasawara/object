@@ -11,7 +11,7 @@ public class TimeCreateSample2 {
     public static void main(String[] args) {
         //日付/時間クラスを任意の形式で文字列を出力する
         LocalDateTime date = LocalDateTime.now();
-        System.out.println(DateTimeFormatter.ofPattern("yyy/MM/dd HH:mm:ss.SSS").format(date));
+        System.out.println(DateTimeFormatter.ofPattern("yyy/M/dd HH:mm:ss.SSS").format(date));
                                                         //2021/11/04 14:26:21.527
         //文字列で表現された日付を日付/時間クラスに変換する:parseメソッド　戻り値の型がTemporalAccessorインタフェースなり扱いづらいため
         //LocalDateTimeクラスなどに変換します。

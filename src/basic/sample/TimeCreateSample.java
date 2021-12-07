@@ -11,6 +11,7 @@ public class TimeCreateSample {
         //現在の日付
         LocalDate date = LocalDate.now();
         System.out.println(date);//2021-11-04
+       // System.out.println(LocalDateTime.now()); //上記2行を１行で記述する方法
         //現在の時間
         LocalTime time = LocalTime.now();
         System.out.println(time);//12:38:22.154126
@@ -57,7 +58,7 @@ Date and Time API　のメリット
 2.年月日など指定してインスタンスを生成できる
 3.年月日の各フィールドの値を個別に取得できる
 4.年月日の計算ができる
-5.イミュータブルである
+5.イミュータブルである（作成後変化させることができないオブジェクト）
 
 
  */
